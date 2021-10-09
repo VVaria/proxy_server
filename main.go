@@ -18,7 +18,7 @@ func main() {
 	flag.StringVar(&protocol, "proto", "http", "")
 	flag.Parse()
 
-	log.Println("Start server port 8080")
+	log.Println("Start server port 8082")
 	server := &http.Server{
 		Addr: ":8082",
 		Handler: p,
