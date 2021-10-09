@@ -20,7 +20,7 @@ func main() {
 
 	log.Println("Start server port 8080")
 	server := &http.Server{
-		Addr: ":8080",
+		Addr: ":8082",
 		Handler: p,
 		TLSNextProto: make(map[string]func(*http.Server, *tls.Conn, http.Handler)),
 	}
